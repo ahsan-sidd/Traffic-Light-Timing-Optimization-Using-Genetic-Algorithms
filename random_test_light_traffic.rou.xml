@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-11 20:37:07.277495 by randomTrips.py v1_22_0+0002-63e50f52594
+<configuration>
+    <net-file value="network.net.xml"/>
+    <route-file value="random_test_light_traffic.rou.xml"/>
+    <prefix value="veh_17271"/>
+    <trip-attributes value="departSpeed=&quot;max&quot;"/>
+    <seed value="17271"/>
+    <validate value="True"/>
+    <end value="100.0"/>
+    <period value="20.0"/>
+</configuration>
+-->
+
+<!-- generated on 2025-05-11 20:37:07 by Eclipse SUMO duarouter Version 1.22.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="network.net.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="random_test_light_traffic.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+        <end value="100.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="veh_172710" depart="0.00" departSpeed="max">
+        <route edges="west2center center2east"/>
+    </vehicle>
+    <vehicle id="veh_172711" depart="20.00" departSpeed="max">
+        <route edges="west2center center2east"/>
+    </vehicle>
+    <vehicle id="veh_172712" depart="40.00" departSpeed="max">
+        <route edges="west2center center2south"/>
+    </vehicle>
+    <vehicle id="veh_172713" depart="60.00" departSpeed="max">
+        <route edges="north2center center2south"/>
+    </vehicle>
+    <vehicle id="veh_172714" depart="80.00" departSpeed="max">
+        <route edges="north2center center2south"/>
+    </vehicle>
+</routes>

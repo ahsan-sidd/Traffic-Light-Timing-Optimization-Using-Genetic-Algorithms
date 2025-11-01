@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-11 20:25:47.739845 by randomTrips.py v1_22_0+0002-63e50f52594
+<configuration>
+    <net-file value="network.net.xml"/>
+    <route-file value="random_light_traffic.rou.xml"/>
+    <prefix value="veh_2426"/>
+    <trip-attributes value="departSpeed=&quot;max&quot;"/>
+    <seed value="2426"/>
+    <validate value="True"/>
+    <end value="100.0"/>
+    <period value="20.0"/>
+</configuration>
+-->
+
+<!-- generated on 2025-05-11 20:25:47 by Eclipse SUMO duarouter Version 1.22.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="network.net.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="random_light_traffic.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+        <end value="100.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="veh_24260" depart="0.00" departSpeed="max">
+        <route edges="west2center center2south"/>
+    </vehicle>
+    <vehicle id="veh_24261" depart="20.00" departSpeed="max">
+        <route edges="north2center center2south"/>
+    </vehicle>
+    <vehicle id="veh_24262" depart="40.00" departSpeed="max">
+        <route edges="north2center center2east"/>
+    </vehicle>
+    <vehicle id="veh_24263" depart="60.00" departSpeed="max">
+        <route edges="north2center center2south"/>
+    </vehicle>
+    <vehicle id="veh_24264" depart="80.00" departSpeed="max">
+        <route edges="north2center center2east"/>
+    </vehicle>
+</routes>
